@@ -4,7 +4,7 @@ import lms from "../assets/lms.jpeg";
 import smp from "../assets/smp.jpeg";
 import todo from "../assets/todo.jpeg";
 
-export default function () {
+export default function project () {
   const cardItems = [
     {
       id: 1,
@@ -42,17 +42,17 @@ export default function () {
   return (
     <div
       name="Portfolio"
-      className="max-w-screen-2*1 container  mx-auto px-4 md:px-20  mt-10"
+     className="max-w-screen-2xl container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 mt-10"
     >
       <div>
         <h1 className="text-3xl font-bold mb-5">Projects</h1>
         <span className="underline font-semibold">Features Projects</span>
 
         <div className="h-[auto] w-[full]">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:space-y-0  bg-white md:h-[auto]">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 bg-white">
             {cardItems.map(({ id, logo, name, par }) => (
               <div
-                className="md:w-[300px] h-[auto] md:space-y-0  md:space-x-0 border-full space-y-0 shadow-2xl md:my-10 md:mx-10 items-center justify-center p-8 cursor-pointer md:hover:scale-105 duration-300"
+                className="w-full md:w-[300px] flex flex-col items-center justify-center shadow-2xl my-5 mx-auto md:my-10 md:mx-5 p-6 cursor-pointer hover:scale-[1.02] transition-all duration-300 rounded-xl"
                 key={id}
               >
                 <img
