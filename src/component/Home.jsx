@@ -67,7 +67,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="space-y-2">
-                <h1 className="font-bold">Currently Work On</h1>
+                <h1 className="font-bold">Currently Work OFF</h1>
                 <div className="flex space-x-5 my-2">
                   <FaReact className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
                   <SiMongodb className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
