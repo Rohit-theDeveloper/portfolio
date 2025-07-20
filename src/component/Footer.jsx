@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <div className='mt-8 border-t border-gray-700 pt-8 flex flex-col items-center'>
               <p className='text-sm'>&copy; 2025 Rohit Kumar. All rights reserved.</p>
-              <p className='text-sm'>Built with ❤️ by Rohit | Special thanks to Someone Special for constant supp</p> 
+              <p className='text-sm'>Built with ❤️ by Rohit | Special thanks to Shilpi for constant supp</p> 
             </div>
           </div>
         </div>
