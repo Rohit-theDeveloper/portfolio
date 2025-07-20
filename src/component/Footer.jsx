@@ -14,7 +14,7 @@ export default function Footer() {
               <FaLinkedin size={25}/>
               <FaWhatsapp size={25}/>
             </div>
-            <div className='mt-8 border-t border-gray-700 pt-8 flex flex-col items-center'>
+            <div className='mt-8 border-t border-gray-700 pt-8 flex flex-col items-center justify-center text-center'>
               <p className='text-sm'>&copy; 2025 Rohit Kumar. All rights reserved.</p>
               <p className='text-sm'>Built with ❤️ by Rohit | Special thanks to Shilpi for constant supp</p> 
             </div>

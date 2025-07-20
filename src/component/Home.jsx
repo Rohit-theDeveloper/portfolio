@@ -14,16 +14,16 @@ export default function Home() {
     <>
       <div
         name="Home"
-        className="max-w-screen-2*1 container  mx-auto px-4 md:px-20 my-20"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-8 lg:px-20 my-20"
       >
         <div className="flex flex-col md:flex-row px-5" >
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
             <span>Welcome in My Feed</span>
-            <div className="flex space-x-2 md:text-4xl">
+            <div className="flex flex-wrap items-center space-x-2 text-lg sm:text-xl md:text-3xl lg:text-4xl">
               <h1>Hello I am a </h1>
               {/* <span >Developer</span> */}
               <ReactTyped
-                className="text-red-700 font-bold"
+                className="text-red-700 font-bold "
                 strings={["Developer", "Coder", "Programmer"]}
                 typeSpeed={40}
                 backSpeed={50}
@@ -39,7 +39,7 @@ export default function Home() {
             </p>
             <br />
             {/* {media icon} */}
-            <div className="flex flex-col items-center justify-between  md:flex-row  space-y-6 md:space-y-1">
+            <div className="flex flex-col gap-6 md:flex-row md:gap-4 mt-4 justiy-center items-center">
               <div className=" space-y-2 ">
                 <h1 className="font-bold">Avilable on </h1>
                 <ul className="flex space-x-5">
@@ -77,10 +77,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 justify-center items-center ml-25 md:ml-48 md:mt-20 mt-8 order-1  px-15  rounded-2xl">
+          <div  className="md:w-1/2 flex justify-center items-center ml-auto mr-auto md:ml-12 md:mt-12 mt-8 order-1 px-4 rounded-2xl">
             <img
               src={pic}
-              className="rounded-full   md:w-[350px] md:h-[350px] w-[200px] h-[200px] "
+             className="rounded-full w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px]"
               alt=""
             />
           </div>
