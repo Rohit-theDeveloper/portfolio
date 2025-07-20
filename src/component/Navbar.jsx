@@ -16,7 +16,7 @@ export default function Navbar() {
     },
     {
       id: 3,
-      text:"Projects",
+      text:"Project",
     },
     {
       id: 4,

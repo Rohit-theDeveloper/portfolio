@@ -41,7 +41,7 @@ export default function project () {
   ];
   return (
     <div
-      name="Portfolio"
+      name="Project"
      className="max-w-screen-2xl container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 mt-10"
     >
       <div>
