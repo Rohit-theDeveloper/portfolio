@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+
 // import bgImage from "../assets/rohit.jpg";
 import axios from "axios";
 import toast from "react-hot-toast";
 export default function Contact() {
+
+   const[isLoading, setIsLoading] =  useState(false);
   const {
     register,
     handleSubmit,
@@ -11,18 +14,25 @@ export default function Contact() {
   } = useForm();
 
   const onSubmit = async (data) => {
+    setIsLoading(true);
+        
     const userInfo = {
       name: data.name,
       email: data.email,
       message: data.message,
-    };
+    
+    }
+  
     try {
       await axios.post("https://getform.io/f/bronznma", userInfo);
       toast.success("Your Message has been sent");
     } catch (error) {
       console.log(error);
       toast.error("Something went wrong");
-    }
+    }finally {
+    setIsLoading(false); 
+  }
+
   };
 
   return (
@@ -48,7 +58,7 @@ export default function Contact() {
                 <label className="block text-gray-700">FullName</label>
                 <input
                   {...register("name", { required: true })}
-                  className="shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:shadow-outline hover:bg-white  cursor-pointer hover:scale-110"
+                  className="shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:shadow-outline  bg-white"
                   id="name"
                   name="name"
                   type="text"
@@ -60,7 +70,7 @@ export default function Contact() {
                 <label className="block text-gray-700">Email Address</label>
                 <input
                   {...register("email", { required: true })}
-                  className="shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:shadow-outline hover:bg-white  cursor-pointer hover:scale-110"
+                  className="shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:shadow-outline  bg-white"
                   id="name"
                   name="email"
                   type="email"
@@ -73,7 +83,7 @@ export default function Contact() {
                 <label className="block text-gray-700">Messge</label>
                 <textarea
                   {...register("message", { required: true })}
-                  className="shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:shadow-outline hover:bg-white  cursor-pointer hover:scale-110 "
+                  className="shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:shadow-outline bg-white"
                   id="name"
                   name="message"
                   type="text"
@@ -83,11 +93,39 @@ export default function Contact() {
               </div>
 
               <button
-                type="submit"
-                className="bg-black text-white rounded-xl px-3 py-2 hover:bg-slate-700 duration-300"
-              >
-                send
-              </button>
+        type="submit"
+        disabled={isLoading}
+        className={`bg-blue-600 text-white font-medium py-2 px-4 rounded flex items-center justify-center gap-2 transition duration-300 
+        ${isLoading ? 'opacity-70 cursor-not-allowed' : 'hover:bg-blue-700'}`}
+      >
+        {isLoading ? (
+          <>
+            <svg
+              className="animate-spin h-5 w-5 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v8H4z"
+              />
+            </svg>
+            Submitting...
+          </>
+        ) : (
+          "Submit"
+        )}
+      </button>
             </form>
           </div>
         </div>
