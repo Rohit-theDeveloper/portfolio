@@ -71,17 +71,17 @@ export default function Experience() {
     },
   ];
   return (
-    <div name="Experience" className="max-w-screen-2*1 container  mx-auto px-4 md:px-20  my-16">
+    <div name="Experience" className="max-w-screen-2xl container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 my-16">
       <div>
         <h1 className="text-3xl font-bold mb-5">Experience</h1>
         <span className="font-semibold">
           I've more than 1.5 years of Experience in below Technologies
         </span>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3">
+        <div  className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 my-8 ">
           {cardItems.map(({ id, logo, name }) => (
             <div
-              className="flex flex-col justify-center items-center rounded-full p-1 md:h-[200px] md:w-[200px] cursor-pointer hover:scale-110 duration-300"
+            className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-4 hover:scale-105 transition-all duration-300"
               key={id}
             >
               <img
