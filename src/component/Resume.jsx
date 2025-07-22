@@ -1,5 +1,5 @@
 import React from "react";
-import Rohit_Kumar_Resum from "../assets/RohitKumarWD.pdf"
+import Rohit_Kumar_Resum from "../assets/RohitKumar.pdf";
 
 export default function Resume() {
   return (
