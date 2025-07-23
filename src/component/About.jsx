@@ -11,7 +11,7 @@ export default function About() {
         background in IT, I strive to cretae impactful and visually stunning
         software solutions that leave a lasting impression.
       </p> */}
-      <p className="w-full text-gray-700 text-base md:text-lg leading-relaxed">
+      <p className="w-full text-gray-700 text-base md:text-lg leading-relaxed text-justify">
         Hello! I'm <span className="font-semibold text-blue-600">Rohit</span>, a
         passionate web developer with a strong interest in the
         <span className="font-semibold">
@@ -76,7 +76,7 @@ export default function About() {
         hic quos perspiciatis alias adipisci dolorum eligendi quod culpa
         repellendus debitis!
       </span> */}
-      <p className="w-full  text-gray-600 mb-8  md:text-left">
+      <p className="w-full  text-gray-600 mb-8 text-justify  md:text-left">
         I specialize in building modern, responsive, and interactive web
         applications using the latest front-end technologies. I'm passionate
         about clean code, great UI/UX, and continuous learning.
@@ -133,7 +133,7 @@ export default function About() {
         repellendus debitis!
       </span> */}
 
-      <p className="w-full text-gray-600  md:text-left mb-8">
+      <p className="w-full text-gray-600 text-justify md:text-left mb-8">
         I have worked as a Full Stack Developer at{" "}
         <span className="text-blue font-black">Greensoft pvt ltd</span>, where I
         contributed to building scalable and responsive web applications using
@@ -184,7 +184,7 @@ export default function About() {
         hic quos perspiciatis alias adipisci dolorum eligendi quod culpa
         repellendus debitis!
       </span> */}
-      <p className="max-w-full  text-gray-600 text-base md:text-left mb-8">
+      <p className="max-w-full text-justify text-gray-600 text-base md:text-left mb-8">
         Here's a glimpse of some recognitions and certifications that highlight
         my journey in both technical and leadership roles.
       </p>
@@ -256,7 +256,7 @@ export default function About() {
       <h1 className="text-green-600 font-semibold text-xl text-center md:text-left">
         Mission Statement
       </h1>
-      <p className="max-w-full  text-gray-600 text-base md:text-lett leading-relaxed">
+      <p className="max-w-full text-justify text-gray-600 text-base md:text-lett leading-relaxed">
         My mission is to continuously grow as a web developer by building
         meaningful, user-centric applications that combine functionality with
         great design. I strive to contribute to innovative projects that make a
