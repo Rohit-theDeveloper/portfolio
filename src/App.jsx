@@ -8,6 +8,7 @@ import Footer from "./component/Footer";
 import Contact from "./component/Contact";
 import Resume from "./component/Resume";
 import { Toaster } from "react-hot-toast";
+import Certificate from "./component/Certificate";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <About></About>
         <Project />
         <Experience />
+        <Certificate/>
         <Resume/>
         <Contact />
         <Footer />
