@@ -1,6 +1,6 @@
 import React from "react";
-import FullStack from "../assets/Full-Stack.png";
-import Aws from "../assets/Aws.png";
+import FullStack from "../assets/Full-stack certificate.png";
+import Aws from "../assets/Aws Certificate.png";
 import { useState } from "react";
 
 const Certificate = () => {
